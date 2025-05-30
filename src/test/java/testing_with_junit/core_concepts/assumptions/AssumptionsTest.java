@@ -2,8 +2,6 @@ package testing_with_junit.core_concepts.assumptions;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import testing_with_junit.core_concepts.assumptions.Job;
-import testing_with_junit.core_concepts.assumptions.SUT;
 import testing_with_junit.core_concepts.assumptions.environment.JavaSpecification;
 import testing_with_junit.core_concepts.assumptions.environment.OperationSystem;
 import testing_with_junit.core_concepts.assumptions.environment.TestsEnvironment;
@@ -24,7 +22,7 @@ class AssumptionsTest {
 
     @BeforeEach
     void setUp() {
-        assumeTrue(environment.isWindows());
+        assumeTrue(environment.isLinux());
     }
 
     @Test

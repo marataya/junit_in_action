@@ -9,7 +9,7 @@ public class TestsEnvironment {
         this.operationSystem = operationSystem;
     }
 
-    public boolean isWindows() {
+    public boolean isLinux() {
         return operationSystem.getName().contains("Linux");
     }
 
